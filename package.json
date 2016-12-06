@@ -1,0 +1,13 @@
+{
+  "name": "mytest",
+  "version": "0.0.0",
+  "private": true,
+  "scripts": {
+    "start": "node ./bin/www"
+  },
+  "dependencies": {
+    "ejs": "^2.5.5",
+    "express": "^4.14.0",
+    "path": "^0.12.7"
+  }
+}
