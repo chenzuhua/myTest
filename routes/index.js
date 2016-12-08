@@ -1,3 +1,4 @@
-module.exports = function(app){
+module.exports = function(app,io){
 	require('./login')(app);
+	require('./chat')(app,io);
 }

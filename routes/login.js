@@ -1,5 +1,8 @@
 module.exports = function(app){
 	app.get('/',function(req,res){
-		res.render('index',{a:'1'});
+		var data = {
+			title : '后台管理系统'
+		};
+		res.render('index',data);
 	});
 }

@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="initial-scale=1 , maximum-scale=1, user-scalable=no, width=device-width">
+<title>聊天室</title>
+<script src="/js/jquery.min.js"></script>
+<script src="/socket.io/socket.io.js"></script>
+<script src="/module/layer/layer.js"></script>
+<link rel="stylesheet" href="/module/bootstrap/css/bootstrap.min.css" />
+<link rel="stylesheet" href="/css/style.css" />
+<style>
+	body{width: 90%;height: 100%; margin:0 auto;}
+	.chatBox{height: 300px;border: 1px solid #C0C0C0; overflow: auto;}
+	.chat-input{border: 1px solid #C0C0C0; border-top: 0;}
+	.chat-input .content{ height: 100px; border: 0; outline: none; padding: 10px; overflow: auto;}
+	.chat-input a{margin: 10px; width: 100px; display: inline-block; background: #38f; text-align: center; padding: 5px 0; border-radius: 5px; color: #fff; float: right;}
+	.msg-system{text-align: center; padding: 5px 0;}
+</style>
+</head>
+<body>
+	<div id="chatbox" style="display:none;">
+		<div>
+			<span id="showusername"></span>　　<span id="onlinecount"></span>
+		</div>
+		<div class="chatBox" id="message">
+			
+		</div>
+		<div class="chat-input clearfix">
+			<div class="content" id="content" contenteditable='true'></div>
+			<a href="javacript:;"  onclick="CHAT.submit();">发送</a>
+		</div>
+	</div>
+	<script src="/js/chat.js"></script>
+</body>
+</html>
+</html>

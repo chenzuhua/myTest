@@ -1,10 +1,31 @@
 <!DOCTYPE html>
 <html>
 <head>
-	<meta charset="UTF-8">
-	<title><%-a%></title>
+<meta charset="UTF-8">
+<meta name="viewport" content="initial-scale=1 , maximum-scale=1, user-scalable=no, width=device-width">
+<title><%=title%></title>
+<link rel="stylesheet" href="/module/bootstrap/css/bootstrap.min.css" />
+<link rel="stylesheet" href="/css/style.css" />
 </head>
-<body>
-	<%-a%>
+<body class="index">
+	
+	<div class="login-box clearfix">
+		<div class="title">后台管理系统</div>
+		<table>
+			<tr>
+				<td>用户名：</td>
+				<td><input type="text" name="name" /></td>
+			</tr>
+			<tr>
+				<td>密码：</td>
+				<td><input type="password" name="pwd" /></td>
+			</tr>
+			<tr>
+				<td colspan="2">
+					<a href="#" class="submit">登录</a>
+				</td>
+			</tr>
+		</table>
+	</div>
 </body>
 </html>
