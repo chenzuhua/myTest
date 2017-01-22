@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<meta content="width=device-width, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0, user-scalable=0" name="viewport">
+<title></title>
+<style>
+	#b {
+	    stroke-dasharray: 100px;
+	    stroke-dashoffset: 100px;
+	    animation: progressAnimation1 2s linear infinite;
+	}
+	#c{
+		stroke: #009F95;
+		stroke-width: 5;
+		stroke-dasharray: 10px 20px;
+		animation: progressAnimation 2s linear infinite;
+	}
+	#d{
+		stroke: #009F95;
+		stroke-width: 5;
+		stroke-dasharray: 10px 20px;
+		stroke-dashoffset: 500px;
+		/*animation: progressAnimation 2s linear infinite;*/
+	}
+	@keyframes progressAnimation {
+	    from {
+	        stroke-dashoffset: 0px;
+	    }
+	    to {
+	        stroke-dashoffset: 300px;
+	    }
+	}
+	@keyframes progressAnimation1 {
+	    from {
+	        stroke-dashoffset: 0px;
+	    }
+	    to {
+	        stroke-dashoffset: 900px;
+	    }
+	}
+	.a1{width: 100px; height: 300px; background: #009F95; display: inline-block; vertical-align: middle;}
+	.st{animation: jianchu 2s linear; position: relative;}
+	@keyframes jianchu {
+	    from {
+	        opacity:0;
+    		filter: alpha(opacity=0);
+    		margin-top: 100px;
+	    }
+	    to {
+	        opacity:1;
+    		filter: alpha(opacity=1);
+    		margin-top: 0px;
+	    }
+	}
+</style>
+</head>
+<body>
+	<svg width="240" height="240" style="vertical-align: middle;">
+		<circle id="a" r="90" cy="120" cx="120" stroke-width="3" stroke="#333" fill="none" /> 
+		<circle id="b" r="90" cy="120" cx="120" stroke-width="3" stroke="#f00" fill="none" /> 
+	</svg>
+	<div style="width: 500px; display: inline-block; vertical-align: middle; margin-left: 30px;">
+		<svg>
+			<line id="c" x1="0" y1="0" x2="500" y2="0"/>
+		</svg>
+		<svg>
+			<line id="d" x1="0" y1="0" x2="500" y2="0"/>
+		</svg>
+	</div>
+	<div class="a1 st" id="q1">
+		
+	</div>
+	<div class="a1" id="q2">
+		
+	</div>
+</body>
+</html>

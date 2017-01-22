@@ -5,4 +5,7 @@ module.exports = function(app){
 		};
 		res.render('index',data);
 	});
+	app.get('/svg',function(req,res){
+		res.render('svg');
+	});
 }
